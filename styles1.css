@@ -116,6 +116,7 @@ button {
   height: 100%;
   font-size: 48px;
   font-weight: bold;
+  font-color: black; 
   padding: 20px;
   background-color: white;
   border-radius: 10px; /* Rounded border for front and back */
