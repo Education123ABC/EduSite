@@ -1,0 +1,2 @@
+# EduSite
+Simple Edu Website
