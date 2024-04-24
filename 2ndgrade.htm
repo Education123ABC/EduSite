@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2nd Grade</title>
+<link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+<header>
+  <nav>
+      <div id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul id="menu">
+        <li><a href="EduWeb.htm">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <div class="grade-buttons">
+      <a href="2ndgrade.htm" class="subject-button">Addition to 20</a>
+      <a href="2ndgradesubtraction.htm" class="subject-button">Subtraction to 20</a>
+      <a href="#" class="subject-button">Geography</a>
+      <a href="#" class="subject-button">Sight Words</a>
+      <a href="#" class="subject-button">Vocabulary</a>
+      <a href="#" class="subject-button">Science</a>
+    </div>
+  </div>
+</main>
+
+<main>
+  <div class="container">
+    <div id="flashcard-container" class="flashcard-container"></div>
+    <div class="answer-input-container">
+      <input type="text" id="answer-input" placeholder="Enter your answer">
+      <button id="check-answer-button" onclick="checkAnswer()">Check Answer</button>
+    </div>
+    <div class="next-button-container">
+      <button id="next-button" class="next-button" onclick="nextFlashcard()">Next Flashcard</button>
+    </div>
+  </div>
+</main>
+
+<script src="flashcards.js"></script>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2024 Elementary Education</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

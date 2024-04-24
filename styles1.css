@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#branding h1 {
+  margin: 0;
+}
+
+#menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+#menu {
+  display: flex;
+  list-style-type: none;
+}
+
+#menu li {
+  margin-right: 20px;
+}
+
+#menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.grade-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grade-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Reset default button styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Style subject buttons */
+.subject-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.subject-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Center the flashcard container */
+.flashcard-container {
+  width: 360px; /* Width of the flashcard */
+  height: 360px; /* Maximum height for the flashcard */
+  margin: 0 auto; /* Center the flashcard horizontally */
+  border: 3px solid black; /* Set border color and thickness */
+  border-radius: 10px; /* Rounded border */
+  box-sizing: border-box; /* Include border in width and height calculations */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow content if it exceeds max height */
+}
+
+.flashcard {
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px; /* Rounded border for front and back */
+  transform-style: preserve-3d; /* Preserve 3D transformation */
+  transition: transform 0.5s; /* Add transition for smooth flip effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flashcard.flip {
+  transform: rotateY(180deg); /* Rotate to show back side */
+}
+
+.answer-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+#answer-input {
+  padding: 5px;
+  margin-right: 10px; /* Add margin between input and button */
+  margin-top: 10px; /* Add margin to separate from button */
+  font-size: 18px;
+  text-align: center; /* Center-align text */
+  height: 50px; /* Adjust height as needed */
+}
+
+#check-answer-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin to separate from button */
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.next-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Add margin to separate from check answer button */
+  width: 180px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
